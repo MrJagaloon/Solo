@@ -1,7 +1,7 @@
 /* ==============================================
   Preloader 
 ============================================== */
-/*#region*/
+//#region
 
 $(window).on('load', function () {
   // fade out preloader
@@ -9,12 +9,12 @@ $(window).on('load', function () {
   $('#preloader').delay(350).fadeOut('slow');
 });
 
-/*#endregion*/
+//#endregion
 
 /* ==============================================
   Team 
 ============================================== */
-/*#region*/
+//#region
 
 $(function () {
 
@@ -46,12 +46,12 @@ $(function () {
   });
 });
 
-/*#endregion*/
+//#endregion
 
 /* ==============================================
   Services Responsive Tabs 
 ============================================== */
-/*#region*/
+//#region
 
 $(function () {
   $('#services-tabs').responsiveTabs({
@@ -59,27 +59,41 @@ $(function () {
   });
 });
 
-/*#endregion*/
+//#endregion
 
 /* ==============================================
-  Portfolio 
+  Portfolio
 ============================================== */
-/*#region*/
+//#region
 
+// initilaize magnific popup for portfolio items
+$(function () {
+  $('#portfolio-wrapper').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});
+
+// initialize isotope for filtering portfolio items
 $(window).on('load', function () {
-  // initialize isotope
-  const $isotopeGrid = $('#isotope-container').isotope({});
+  const $isotopeGrid = $('#isotope-container').isotope();
   const $isotopeFilters = $('#isotope-filters');
 
   // filter portfolio on fliter button click
-  $isotopeFilters.on('click', 'button', function() {
+  $isotopeFilters.on('click', 'button', function () {
+    // filter items
     const filterValue = $(this).attr('data-filter');
+    $isotopeGrid.isotope({
+      filter: filterValue
+    });
 
-    $isotopeGrid.isotope({ filter: filterValue });
-
+    // set active class for pressed filter button
     $isotopeFilters.find('.active').removeClass('active');
     $(this).addClass('active');
   });
 });
 
-/*#endregion*/
+//#endregion
