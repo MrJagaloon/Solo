@@ -49,13 +49,36 @@ $(function () {
 /*#endregion*/
 
 /* ==============================================
-  Responsive Tabs 
+  Services Responsive Tabs 
 ============================================== */
 /*#region*/
 
 $(function () {
   $('#services-tabs').responsiveTabs({
     animation: 'slide'
+  });
+});
+
+/*#endregion*/
+
+/* ==============================================
+  Portfolio 
+============================================== */
+/*#region*/
+
+$(window).on('load', function () {
+  // initialize isotope
+  const $isotopeGrid = $('#isotope-container').isotope({});
+  const $isotopeFilters = $('#isotope-filters');
+
+  // filter portfolio on fliter button click
+  $isotopeFilters.on('click', 'button', function() {
+    const filterValue = $(this).attr('data-filter');
+
+    $isotopeGrid.isotope({ filter: filterValue });
+
+    $isotopeFilters.find('.active').removeClass('active');
+    $(this).addClass('active');
   });
 });
 

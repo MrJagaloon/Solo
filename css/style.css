@@ -49,6 +49,17 @@ section {
 /*#endregion*/
 
 /* ==============================================
+  Bootstrap Related
+============================================== */
+/*#region*/
+
+.row.no-gutters [class*=col-] {
+  padding: 0;
+}
+
+/*#endregion*/
+
+/* ==============================================
   Preloader 
 ============================================== */
 /*#region*/
@@ -651,14 +662,14 @@ ul.social-list li:nth-child(3) a:hover {
   font-weight: 400;
   padding: 0;
   text-decoration: none;
-  -webkit-transition: border-bottom .1s linear;
-  transition: border-bottom .1s linear;
 }
 
 /* tab active state */
 #services-tabs ul li.r-tabs-state-active a {
   color: #f4c613;
   font-weight: 700;
+  -webkit-transition: border-bottom .1s linear;
+  transition: border-bottom .1s linear;
   border-bottom: 3px solid #f4c613;
   padding-bottom: 5px;
 }
@@ -693,6 +704,66 @@ ul.social-list li:nth-child(3) a:hover {
 .service-tab p {
   line-height: 24px;
   margin-bottom: 30px;
+}
+
+/*#endregion*/
+
+/* ==============================================
+  Portfolio Section
+============================================== */
+/*#region*/
+
+#portfolio .vertical-heading {
+  margin-bottom: 50px;
+}
+
+.portfolio-item {
+  overflow: hidden;
+}
+
+/* filter buttons */
+
+#isotope-filters {
+  margin-bottom: 10px;
+  padding: 20px 25px 20px 0;
+}
+
+#isotope-filters button {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-right: 30px;
+}
+
+#isotope-filters button span {
+  display: block;
+  padding-bottom: 5px;
+}
+
+#isotope-filters button.active span {
+  color: #f4c613;
+  font-weight: 700;
+  -webkit-transition: border-bottom .1s linear;
+  transition: border-bottom .1s linear;
+  border-bottom: 3px solid #f4c613;
+  padding-bottom: 5px;
+}
+
+/* zoom effect */
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform .5s ease;
+}
+
+.portfolio-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*#endregion*/
