@@ -1,15 +1,21 @@
 /* ==============================================
   Preloader 
 ============================================== */
+/*#region*/
+
 $(window).on('load', function () {
   // fade out preloader
   $('#status').fadeOut('slow');
   $('#preloader').delay(350).fadeOut('slow');
 });
 
+/*#endregion*/
+
 /* ==============================================
   Team 
 ============================================== */
+/*#region*/
+
 $(function () {
 
   // setup team member carousel
@@ -39,3 +45,18 @@ $(function () {
     offset: 'bottom-in-view'
   });
 });
+
+/*#endregion*/
+
+/* ==============================================
+  Responsive Tabs 
+============================================== */
+/*#region*/
+
+$(function () {
+  $('#services-tabs').responsiveTabs({
+    animation: 'slide'
+  });
+});
+
+/*#endregion*/

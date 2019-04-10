@@ -95,7 +95,7 @@ section {
 
 .btn-home {
   color: #fff;
-  border: 1px solid white;
+  border: 1px solid #fff;
 }
 
 .btn-home:hover,
@@ -103,6 +103,19 @@ section {
   color: #fff;
   background-color: #f4c613;
   border: 1px solid #f4c613;
+}
+
+.btn-yellow {
+  color: #fff;
+  background-color: #f4c613;
+  border: 1px solid #f4c613;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+  color: #fff;
+  background-color: #212226;
+  border: 1px solid #212226;
 }
 
 /*#endregion*/
@@ -594,7 +607,7 @@ ul.social-list li:nth-child(3) a:hover {
   text-transform: uppercase;
   color: #f4c613;
   margin: 0 0 6px 0;
-  -webkit-transition: all .1s linear;  
+  -webkit-transition: all .1s linear;
   transition: all .1s linear;
 }
 
@@ -609,6 +622,77 @@ ul.social-list li:nth-child(3) a:hover {
 
 .service p {
   line-height: normal;
+}
+
+/*#endregion*/
+
+/* ==============================================
+  Services 02 (Responsive Tabs) Section
+============================================== */
+/*#region*/
+
+#services-02 {
+  background: #f4f4f4;
+}
+
+#services-tabs ul {
+  margin-bottom: 40px;
+}
+
+#services-tabs ul li {
+  padding: 5px 30px;
+}
+
+#services-tabs ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  color: #212226;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0;
+  text-decoration: none;
+  -webkit-transition: border-bottom .1s linear;
+  transition: border-bottom .1s linear;
+}
+
+/* tab active state */
+#services-tabs ul li.r-tabs-state-active a {
+  color: #f4c613;
+  font-weight: 700;
+  border-bottom: 3px solid #f4c613;
+  padding-bottom: 5px;
+}
+
+.service-tab img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service-tab .col-md-6 {
+  padding: 0;
+}
+
+.service-tab .tab-bg {
+  padding: 59px 30px;
+  background: #fff;
+  min-height: 400px;
+}
+
+.service-tab h2 {
+  font-size: 48px;
+  font-weight: 100;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.service-tab h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.service-tab p {
+  line-height: 24px;
+  margin-bottom: 30px;
 }
 
 /*#endregion*/
