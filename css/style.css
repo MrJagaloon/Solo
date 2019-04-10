@@ -14,6 +14,7 @@
 /* ==============================================
   General
 ============================================== */
+/*#region*/
 
 html,
 body {
@@ -45,10 +46,12 @@ section {
   overflow: hidden;
 }
 
+/*#endregion*/
 
 /* ==============================================
   Preloader 
 ============================================== */
+/*#region*/
 
 #preloader {
   background-color: #fff;
@@ -72,10 +75,12 @@ section {
   margin-left: -35px;
 }
 
+/*#endregion*/
 
 /* ==============================================
   Buttons
 ============================================== */
+/*#region*/
 
 .btn-general {
   font-family: 'Raleway', sans-serif;
@@ -100,10 +105,24 @@ section {
   border: 1px solid #f4c613;
 }
 
+/*#endregion*/
+
+/* ==============================================
+  Owl Carousel Buttons
+============================================== */
+/*#region*/
+
+.owl-theme .owl-nav button[class*=owl-]:hover {
+  background: none;
+  color: #212226;
+}
+
+/*#endregion*/
 
 /* ==============================================
   Arrow Down
 ============================================== */
+/*#region*/
 
 #arrow-down {
   color: #fff;
@@ -129,10 +148,12 @@ section {
   font-size: 48px;
 }
 
+/*#endregion*/
 
 /* ==============================================
   Content Boxes
 ============================================== */
+/*#region*/
 
 .content-box-lg {
   padding: 120px 0;
@@ -142,10 +163,12 @@ section {
   padding: 100px 0;
 }
 
+/*#endregion*/
 
 /* ==============================================
   Vertical Headings
 ============================================== */
+/*#region*/
 
 .vertical-heading h5 {
   color: #f4c613;
@@ -172,10 +195,12 @@ section {
   color: #f4c613;
 }
 
+/*#endregion*/
 
 /* ==============================================
   Home Section
 ============================================== */
+/*#region*/
 
 #home {
   background: none;
@@ -239,10 +264,12 @@ section {
   margin: 8px 0 30px 0;
 }
 
+/*#endregion*/
 
 /* ==============================================
   About Section 01
 ============================================== */
+/*#region*/
 
 #about-right p:first-child {
   margin-bottom: 30px;
@@ -256,10 +283,12 @@ section {
   margin: 0 auto;
 }
 
+/*#endregion*/
 
 /* ==============================================
   About Section 02
 ============================================== */
+/*#region*/
 
 #about-02 {
   background-color: #f4f4f4;
@@ -328,10 +357,12 @@ section {
   transition: all 400ms ease-in-out;
 }
 
+/*#endregion*/
 
 /* ==============================================
   Team Section
 ============================================== */
+/*#region*/
 
 #team-left .vertical-heading {
   min-height: 160px;
@@ -431,20 +462,12 @@ ul.social-list li:nth-child(3) a:hover {
   margin: 0 4px;
 }
 
-
-/* ==============================================
-  Owl Carousel Buttons
-============================================== */
-
-.owl-theme .owl-nav button[class*=owl-]:hover {
-  background: none;
-  color: #212226;
-}
-
+/*#endregion*/
 
 /* ==============================================
   Skill Section
 ============================================== */
+/*#region*/
 
 .skill {
   margin-bottom: 20px;
@@ -488,3 +511,34 @@ ul.social-list li:nth-child(3) a:hover {
   bottom: -8px;
   left: 23%;
 }
+
+/*#endregion*/
+
+/* ==============================================
+  Statement Section
+============================================== */
+/*#region*/
+
+#statement {
+  background: url("../img/tech/tech-quote.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+#statement .content-box-lg {
+  background: rgba(0, 0, 0, .3);
+}
+
+#tech-statement h3 {
+  color: #fff;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+#tech-statement p {
+  font-size: 14px;
+  color: #f4c613;
+  font-family: "Raleway", sans-serif;
+  margin-top: 8px;
+}
+
+/*#endregion*/
